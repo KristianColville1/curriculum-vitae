@@ -35,7 +35,7 @@
 }
 
 .bg-color-github {
-  background-color: #8f8f8f;
+  background-color: var(--cream);
 }
 
 .bg-color-conferences {
@@ -59,9 +59,8 @@
 }
 
 .ui-menu-color-download {
-  background-color: rgb(60, 41, 84);
+  background-color: var(--cream);
 }
-
 
 .ui-menu-color-github {
   background-color: #F05365;
@@ -117,6 +116,64 @@ h4 {
 
 /*--------------------------------------------Heading*/
 
+.nav-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navbar-brand {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: white;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+.navbar-nav .nav-link a {
+  color: white;
+  font-size: 20px;
+}
+
+
 header {
   margin: 0;
 }
@@ -127,7 +184,7 @@ header {
 
 .logo {
   background: url("../images/me.jpg") no-repeat center center;
-  background-color: #3498db8b;
+  background-color: #3498db61;
   background-blend-mode: soft-light;
   background-size: cover;
   min-height: 360px;
@@ -183,6 +240,7 @@ header {
   color: #ffffff;
 }
 
+.ui-menu-color-download a,
 .ui-menu-color-github a {
   color: black;
 }
@@ -394,6 +452,7 @@ footer .cv-pdf i:hover {
 .carousel-control-next {
   cursor: pointer;
 }
+
 /*--------------------------------------------Contact*/
 
 .contact-heading {
@@ -422,6 +481,7 @@ button[type="submit"] {
   width: 100%;
   background-color: var(--cream);
 }
+
 /*--------------------------------------------Interests*/
 
 .interest-icon {
@@ -443,7 +503,7 @@ button[type="submit"] {
 #hackathon-projects,
 #portfolio-projects {
   margin: 0;
-  position:relative;
+  position: relative;
   overflow: hidden;
 }
 
@@ -458,10 +518,6 @@ button[type="submit"] {
   text-align: center;
   padding: 0px;
   position: relative;
-}
-
-.portfolio-project {
-
 }
 
 .image-back,
@@ -514,7 +570,7 @@ button[type="submit"] {
   position: absolute;
   top: 0;
   left: 0;
-  transition: 1.2s;
+  transition: .6s;
   backface-visibility: hidden;
 
 }
@@ -523,6 +579,7 @@ button[type="submit"] {
   transform: perspective(1000px) rotateX(0deg);
   z-index: 2;
 }
+
 .img-container .image-back {
   transform: perspective(1000px) rotateX(180deg);
   z-index: 1;
@@ -532,6 +589,7 @@ button[type="submit"] {
   transform: perspective(1000px) rotateX(-180deg);
   z-index: 2;
 }
+
 .img-container:hover .image-back {
   transform: perspective(1000px) rotateX(0deg);
   z-index: 1;
@@ -547,7 +605,7 @@ section .documentation ul {
   list-style-type: none;
 }
 
-section .documentation ul li{
+section .documentation ul li {
   height: 40px;
 }
 
@@ -558,9 +616,11 @@ section .documentation ul li a {
 
 section .documentation ul li a:hover {
   font-size: 110%;
-  color: white;
+  font-weight: 500;
+  color: var(--dark-purple);
   transition: all 0.2s ease-in-out;
 }
+
 /*--------------------------------------------Media Queries*/
 
 @media screen and (min-width: 992px) {
@@ -582,13 +642,14 @@ section .documentation ul li a:hover {
   .menucontainer {
     display: block;
   }
+
   .menuitem {
     width: 49%;
     display: inline-block;
   }
 }
 
-@media screen and (max-width: 435px){
+@media screen and (max-width: 435px) {
   .image-back {
     font-size: 24px;
   }
