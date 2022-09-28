@@ -419,8 +419,19 @@ button[type="submit"] {
   background-color: var(--cream);
 }
 /*--------------------------------------------Map*/
-div#map {
-  min-height: 360px;
+
+.interest-icon {
+  font-size: 26px;
+  color: var(--iceberg);
+}
+
+.three-reasons-icon {
+  font-size: 26px;
+  color: var(--lapis-lazuli);
+}
+
+.interest-heading {
+  margin-bottom: 15px;
 }
 
 /*--------------------------------------------Media Queries*/
