@@ -34,6 +34,10 @@
   background-color: #ffffff;
 }
 
+.bg-color-github {
+  background-color: #8f8f8f;
+}
+
 .bg-color-conferences {
   background-color: #f4f4f4;
 }
@@ -43,11 +47,11 @@
 }
 
 .ui-menu-color-home {
-  background-color: rgb(48, 126, 214);
+  background-color: #9b59b6;
 }
 
 .ui-menu-color-resume {
-  background-color: #9b59b6;
+  background-color: var(--lapis-lazuli);
 }
 
 .ui-menu-color-contact {
@@ -418,7 +422,7 @@ button[type="submit"] {
   width: 100%;
   background-color: var(--cream);
 }
-/*--------------------------------------------Map*/
+/*--------------------------------------------Interests*/
 
 .interest-icon {
   font-size: 26px;
@@ -434,6 +438,129 @@ button[type="submit"] {
   margin-bottom: 15px;
 }
 
+/*--------------------------------------------GitHub*/
+
+#hackathon-projects,
+#portfolio-projects {
+  margin: 0;
+  position:relative;
+  overflow: hidden;
+}
+
+.portfolio-projects li {
+  padding: 0;
+}
+
+.portfolio-project,
+.img-container {
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  padding: 0px;
+  position: relative;
+}
+
+.portfolio-project {
+
+}
+
+.image-back,
+.image-front,
+.pp1,
+.pp2,
+.pp3,
+.pp4,
+.pp5 {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-radius: 4px;
+}
+
+.pp1 {
+  background: url('../images/portfolio-projects/raza-noodles.png') no-repeat center center;
+  background-size: cover;
+}
+
+.pp2 {
+  background: url('../images/portfolio-projects/sudoku-master.png') no-repeat center center;
+  background-size: cover;
+}
+
+.pp3 {
+  background: url('../images/portfolio-projects/rapid-silver.png') no-repeat center center;
+  background-size: cover;
+}
+
+.pp4 {
+  background: url('../images/portfolio-projects/daily-sync.png') no-repeat center center;
+  background-size: cover;
+}
+
+.pp5 {
+  background: url('../images/portfolio-projects/in-progress.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.pp6 {
+  background: url('../images/portfolio-projects/jan-hackathon.png') no-repeat center center;
+  background-size: cover;
+}
+
+.img-container .image-front,
+.img-container .image-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1.2s;
+  backface-visibility: hidden;
+
+}
+
+.img-container .image-front {
+  transform: perspective(1000px) rotateX(0deg);
+  z-index: 2;
+}
+.img-container .image-back {
+  transform: perspective(1000px) rotateX(180deg);
+  z-index: 1;
+}
+
+.img-container:hover .image-front {
+  transform: perspective(1000px) rotateX(-180deg);
+  z-index: 2;
+}
+.img-container:hover .image-back {
+  transform: perspective(1000px) rotateX(0deg);
+  z-index: 1;
+}
+
+.image-back {
+  background-color: var(--lapis-lazuli);
+  font-size: 32px;
+  color: gold;
+}
+
+section .documentation ul {
+  list-style-type: none;
+}
+
+section .documentation ul li{
+  height: 40px;
+}
+
+section .documentation ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+section .documentation ul li a:hover {
+  font-size: 110%;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
 /*--------------------------------------------Media Queries*/
 
 @media screen and (min-width: 992px) {
@@ -456,7 +583,17 @@ button[type="submit"] {
     display: block;
   }
   .menuitem {
-    width: 49vw;
+    width: 49%;
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 435px){
+  .image-back {
+    font-size: 24px;
+  }
+
+  .image-back h3 {
+    font-size: smaller;
   }
 }

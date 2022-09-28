@@ -2,115 +2,224 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/github-information.js"></script>
-    <title>Kristian</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    type="text/css" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/github-information.js"></script>
+  <title>Kristian</title>
 </head>
 
 <body>
-    <header>
-        <div class="row no-gutters">
-            <a href="index.html" class="col-md-4 logo"></a>
-            <div class="col-md-8">
-                <div class="row no-gutters bg-color-name-title">
-                    <div class="col heading">
-                        <h1 class="name">Kristian Colville</h1>
-                        <h2 class="title">Junior Full Stack Software Developer | MTA</h2>
-                      </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col">
-                    <ul id="nav" class="list-inline menucontainer">
-                      <li class="ui-menu-color-home menuitem">
-                          <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
-                      </li>
-                      <li class="ui-menu-color-resume menuitem">
-                          <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
-                      </li>
-                      <li class="ui-menu-color-contact menuitem">
-                          <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
-                      </li>
-                      <li class="ui-menu-color-interests menuitem">
-                          <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
-                      </li>
-                      <li class="ui-menu-color-github menuitem">
-                          <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
-                      </li>
-                      <li class="ui-menu-color-download menuitem">
-                          <a href="assets/cv/sample-cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
-                      </li>
-                  </ul>
-                  </div>
-                </div>
-
-            </div>
-        </div>
-    </header>
-    <section class="container-fluid">
-        <div class="row bg-color-contact">
-            <div class="col">
-                <h3 class="contact-heading uppercase text-center">View My GitHub Projects</h3>
-                <div class="portfolio-projects">
-                  
-                </div>
-                <h5 class="uppercase text-center">You can also search on other user profiles</h5>
-
-                <div class="center-form">
-                    <input type="text" id="gh-username" value="KristianColville1" oninput="fetchGitHubInformation()" />
-                    <div id="gh-user-data"></div>
-                    <div id="gh-repo-data"></div>
-
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-    <footer class="container-fluid">
-        <div id="footer-details" class="row">
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">About</h5>
-                <p class="inline-block">
-                  Full Stack Software Developer. Skilled in everything from HTML to Heroku. The capacity for structural and design thinking. Up to date using the latest tools and technologies.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Download</h5>
-                <p class="inline-block">
-                    Need a printable version of my CV? Download it here.
-                    <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                        <span class="sr-only">Download link.</span>
-                    </a>
-                </p>
-            </div>
-            <div class="col-sm-4">
-              <h5 class="uppercase general-sub">Social</h5>
-              <ul class="list-inline social-links">
-                <li class="list-inline-item">
-                  <a target="_blank" href="https://github.com/KristianColville1">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    <span class="sr-only">GitHub</span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a target="_blank" href="https://www.linkedin.com/in/kristian-colville-711727133/">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    <span class="sr-only">Linkedin</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <header>
+    <div class="row no-gutters">
+      <a href="index.html" class="col-md-4 logo"></a>
+      <div class="col-md-8">
+        <div class="row no-gutters bg-color-name-title">
+          <div class="col heading">
+            <h1 class="name">Kristian Colville</h1>
+            <h2 class="title">Junior Full Stack Software Developer | MTA</h2>
           </div>
-        </footer>
+        </div>
+        <div class="row no-gutters">
+          <div class="col">
+            <ul id="nav" class="list-inline menucontainer">
+              <li class="ui-menu-color-home menuitem">
+                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home"
+                    aria-hidden="true"></i><span>Home</span></a>
+              </li>
+              <li class="ui-menu-color-resume menuitem">
+                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap"
+                    aria-hidden="true"></i><span>Resume</span></a>
+              </li>
+              <li class="ui-menu-color-contact menuitem">
+                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o"
+                    aria-hidden="true"></i><span>Contact</span></a>
+              </li>
+              <li class="ui-menu-color-interests menuitem">
+                <a href="interests.html" class="hvr-sweep-to-bottom"><i class="fa fa-users"
+                    aria-hidden="true"></i><span>Interests</span></a>
+              </li>
+              <li class="ui-menu-color-github menuitem">
+                <a href="github.html" class="hvr-sweep-to-bottom"><i class="fa fa-github"
+                    aria-hidden="true"></i><span>GitHub</span></a>
+              </li>
+              <li class="ui-menu-color-download menuitem">
+                <a href="assets/cv/sample-cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download"
+                    aria-hidden="true"></i><span>Download CV</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <section class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 bg-color-github section-column">
+          <div class="documentation text-dark">
+            <h3 class="history-heading uppercase">
+              Documentation
+            </h3>
+            <h5>My Portfolio</h5>
+            <ul>
+              <li>
+                <p><a href="https://github.com/KristianColville1/raza-noodles" target="_blank" rel="noopener">Raza Noodles <i class="fa-solid fa-arrow-pointer"></i></a></p>
+              </li>
+              <li>
+                <p><a href="https://github.com/KristianColville1/sudoku-master" target="_blank" rel="noopener">Sudoku Master <i class="fa-solid fa-arrow-pointer"></i></a></p>
+              </li>
+              <li>
+                <p><a href="https://github.com/KristianColville1/rapid-silver" target="_blank" rel="noopener">Rapid Silver <i class="fa-solid fa-arrow-pointer"></i></a></p>
+              </li>
+              <li>
+                <p><a href="https://github.com/KristianColville1/daily-sync" target="_blank" rel="noopener">Daily Sync <i class="fa-solid fa-arrow-pointer"></i></a></p>
+              </li>
+            </ul>
+            <h5>Hackathons</h5>
+            <ul>
+              <li>
+                <p><a href="https://github.com/KristianColville1/team-5-january-hackathon/tree/main" target="_blank" rel="noopener">Clover <i class="fa-solid fa-arrow-pointer"></i></a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8 bg-color-three-reasons section-column">
+            <div class="row">
+                <div class="col">
+                    <h3 class="section-heading uppercase">Portfolio Projects</h3>
+                </div>
+            </div>
+                <ul id="portfolio-projects" class="list-inline menucontainer">
+                  <li class="portfolio-project menuitem">
+                    <div class="img-container">
+                      <div class="image-front  pp1"></div>
+                      <div class="image-back">
+                        <i class="fa-solid fa-award"></i> Award
+                        <h3 class="mt-2"><i class="fa-regular fa-star"></i> Merit <i class="fa-regular fa-star"></i></h3>
+                        <a href="https://kristiancolville1.github.io/raza-noodles/" target="_blank" rel="noopener" class="text-small">Visit</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="portfolio-project menuitem">
+                    <div class="img-container">
+                      <div class="image-front  pp2"></div>
+                      <div class="image-back">
+                        <i class="fa-solid fa-award"></i> Award
+                        <h3 class="mt-2"><i class="fa-regular fa-star"></i> Distinction <i class="fa-regular fa-star"></i></h3>
+                        <a href="https://kristiancolville1.github.io/sudoku-master/" target="_blank" rel="noopener" class="text-small">Visit</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="portfolio-project menuitem">
+                    <div class="img-container">
+                      <div class="image-front  pp3"></div>
+                      <div class="image-back">
+                        <i class="fa-solid fa-award"></i> Award
+                        <h3 class="mt-2"><i class="fa-regular fa-star"></i> Distinction <i class="fa-regular fa-star"></i></h3>
+                        <a href="https://rapid-silver.herokuapp.com/" target="_blank" rel="noopener" class="text-small">Visit</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="portfolio-project menuitem">
+                    <div class="img-container">
+                      <div class="image-front  pp4"></div>
+                      <div class="image-back">
+                        <i class="fa-solid fa-award"></i> Award
+                        <h3 class="mt-2"><i class="fa-regular fa-star"></i> Distinction <i class="fa-regular fa-star"></i></h3>
+                        <a href="https://daily-sync123.herokuapp.com/" target="_blank" rel="noopener" class="text-small">Visit</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="portfolio-project menuitem">
+                    <div class="img-container">
+                      <div class="image-front  pp5"></div>
+                      <div class="image-back">
+                        <i class="fa-solid fa-award"></i> Award
+                        <h3>In progress</h3>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="row">
+                  <div class="col">
+                      <h3 class="section-heading uppercase">Hackathon Projects</h3>
+                  </div>
+              </div>
+              <ul id="portfolio-projects" class="list-inline menucontainer">
+                <li class="col-sm-12 col-md-4 portfolio-project menuitem">
+                  <div class="img-container">
+                    <div class="image-front pp6"></div>
+                    <div class="image-back">
+                      <i class="fa-solid fa-award"></i> Award
+                      <div>
+                        <img src="assets/images/jan-2022-hackathon-codeinstitute.png" alt="second place hackathon badge from code institute" height="80">
+                      </div>
+                      <a href="https://lexach91.github.io/team-5-january-hackathon/" target="_blank" rel="noopener" class="mb-1">Visit</a>
+                    </div>
+                  </div>
+                </li>
+        </div>
+    </div>
+    
+</section>
+  <section class="pp-section">
+    <div>
+
+    </div>
+
+
+  </section>
+  <footer class="container-fluid">
+    <div id="footer-details" class="row">
+      <div class="col-sm-4">
+        <h5 class="uppercase general-sub">About</h5>
+        <p class="inline-block">
+          Full Stack Software Developer. Skilled in everything from HTML to Heroku. The capacity for structural and
+          design thinking. Up to date using the latest tools and technologies.
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h5 class="uppercase general-sub">Download</h5>
+        <p class="inline-block">
+          Need a printable version of my CV? Download it here.
+          <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <span class="sr-only">Download link.</span>
+          </a>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h5 class="uppercase general-sub">Social</h5>
+        <ul class="list-inline social-links">
+          <li class="list-inline-item">
+            <a target="_blank" href="https://github.com/KristianColville1">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://www.linkedin.com/in/kristian-colville-711727133/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <span class="sr-only">Linkedin</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0d880835d2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
