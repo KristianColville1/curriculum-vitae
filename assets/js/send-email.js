@@ -7,6 +7,7 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            window.location.href = "https://kristiancolville1.github.io/curriculum-vitae/thank-you.html";
         },
         function(error) {
             console.log("FAILED", error);
