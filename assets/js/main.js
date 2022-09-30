@@ -37,7 +37,7 @@ $(document).ready(function () {
 
 var nav = $('nav');
 var navHTML = `
-<a class="navbar-brand" href="index.html">Kristian C.</a>
+<a class="navbar-brand" href="index.html"><i class="fa-solid fa-id-card font-weight-bold"></i> Kristian C.</a>
 <div class="btn navbar-togger" data="hamburger-menu" type="button" data-toggle="collapse"
     data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
     aria-label="Toggle navigation">

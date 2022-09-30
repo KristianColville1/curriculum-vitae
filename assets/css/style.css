@@ -117,9 +117,13 @@ h4 {
 /*--------------------------------------------Heading*/
 
 .nav-shadow {
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
+.fa-id-card {
+  font-size: 24px;
+  margin-right: 10px;
+}
 .navbar-brand {
   font-size: 18px;
   text-transform: uppercase;
@@ -656,5 +660,10 @@ section .documentation ul li a:hover {
 
   .image-back h3 {
     font-size: smaller;
+  }
+
+  .interest-heading {
+    margin-bottom: 10px;
+    font-size: 20px;
   }
 }
