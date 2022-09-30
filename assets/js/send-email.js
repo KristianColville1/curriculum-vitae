@@ -1,16 +1,13 @@
-function sendMail(contactForm) {
-    emailjs.send("service_qvyhapz","template_r4qxj0g", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
-    })
-    .then(
-        function(response) {
-            console.log("SUCCESS", response);
-            window.location.href = "https://kristiancolville1.github.io/curriculum-vitae/thank-you.html";
-        },
-        function(error) {
-            console.log("FAILED", error);
-        }
-    );
-}
+document.getElementById('contact-form').addEventListener('submit', function (event){
+    event.preventDefault();
+    emailjs.init('mE35vFipiRMd-JCze');
+    sendEmailBtn.value = 'Sending...';
+
+    emailjs.sendForm('service_qvyhapz', 'template_r4qxj0g', this)
+    .then(function() {
+        console.log('SUCCESS!');
+        displayThanks();
+    }, function(error) {
+        console.log('FAILED...', error);
+    });
+});

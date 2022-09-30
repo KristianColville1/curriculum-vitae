@@ -20,7 +20,7 @@
     type="text/css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Kristian</title>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
       emailjs.init("mE35vFipiRMd-JCze");
@@ -80,7 +80,7 @@
         <h5 class="uppercase text-center">Let's work together</h5>
       </div>
       <div class="center-form w-100">
-        <form onsubmit="return sendMail(this);">
+        <form id="contact-form">
           <input type="text" name="name" class="form-control mb-1" id="fullname" placeholder="Name" required />
           <input type="text" name="emailaddress" class="form-control mb-1" id="emailaddress" placeholder="Email" required />
           <textarea rows="5" name="projectsummary" class="form-control mb-1" id="projectsummary"
